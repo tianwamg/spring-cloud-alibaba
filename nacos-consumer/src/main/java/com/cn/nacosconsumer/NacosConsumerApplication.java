@@ -1,15 +1,15 @@
-package com.nacos.nacosprovider;
+package com.cn.nacosconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+@EnableDiscoveryClient(autoRegister = true)
 @SpringBootApplication
-@EnableDiscoveryClient
-public class NacosProviderApplication {
+public class NacosConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NacosProviderApplication.class, args);
+        SpringApplication.run(NacosConsumerApplication.class, args);
     }
 
 }
