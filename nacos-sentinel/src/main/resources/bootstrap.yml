@@ -1,0 +1,25 @@
+server:
+  port: 10084
+
+spring:
+  application:
+    name: nacos-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+feign:
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        logger-level: full
