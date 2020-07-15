@@ -31,6 +31,7 @@
         <module>nacos-consumer</module>
         <module>nacos-feign</module>
         <module>nacos-sentinel</module>
+        <module>sentinel-dashboard</module>
     </modules>
 
     <dependencyManagement>
