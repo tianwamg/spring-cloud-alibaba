@@ -4,7 +4,7 @@ import com.cn.nacossentinel.FeignService.FeignService;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FeignServiceImpl implements FeignService {
+public class FallbackServiceImpl implements FeignService {
 
     @Override
     public String hello() {

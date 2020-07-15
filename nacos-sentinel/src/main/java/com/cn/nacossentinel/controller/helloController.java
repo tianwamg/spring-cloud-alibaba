@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class helloController {
 
     @Autowired
-    FeignService feignService;
+    private FeignService feignService;
 
     @GetMapping("/h")
     public String hello(){
