@@ -32,6 +32,7 @@
         <module>nacos-feign</module>
         <module>nacos-sentinel</module>
         <module>sentinel-dashboard</module>
+        <module>nacos-gateway</module>
     </modules>
 
     <dependencyManagement>
