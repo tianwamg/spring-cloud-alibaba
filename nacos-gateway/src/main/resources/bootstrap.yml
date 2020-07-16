@@ -1,0 +1,44 @@
+server:
+  port: 10085
+
+spring:
+  application:
+    name: nacos-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        port: 8721
+        dashboard: localhost:10084  #熔断器
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: path_route
+          uri: https://www.baidu.com
+          predicates:
+            - Path=/csdn
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+feign:
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        logger-level: full
+
+logging:
+  level:
+    org.springframe.cloud.gateway:  debug
