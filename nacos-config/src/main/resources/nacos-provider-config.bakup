@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: nacos-provider-config
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 127.0.0.1:8848
+user:
+    name: lalala...
+server:
+    port: 10086
+
+management:
+    endpoint:
+        web:
+            exposure:
+                include: "*"
