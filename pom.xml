@@ -33,6 +33,7 @@
         <module>nacos-sentinel</module>
         <module>sentinel-dashboard</module>
         <module>nacos-gateway</module>
+        <module>nacos-config</module>
     </modules>
 
     <dependencyManagement>
