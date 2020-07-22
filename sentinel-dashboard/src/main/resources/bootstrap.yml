@@ -10,8 +10,8 @@ spring:
         server-addr: 127.0.0.1:8848
     sentinel:
       transport:
-        port: 8719
-        dashboard: localhost:8088
+        port: 8720
+        dashboard: localhost:8900
   #main:
   #  allow-bean-definition-overriding: true
 
