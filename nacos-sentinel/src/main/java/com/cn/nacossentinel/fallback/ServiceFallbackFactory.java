@@ -3,6 +3,7 @@ package com.cn.nacossentinel.fallback;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 
+/*
 @Component
 public class ServiceFallbackFactory implements FallbackFactory<EchoServiceFallback> {
 
@@ -12,3 +13,4 @@ public class ServiceFallbackFactory implements FallbackFactory<EchoServiceFallba
         return new EchoServiceFallback(throwable);
     }
 }
+*/
