@@ -1,13 +1,13 @@
 # spring-cloud-alibaba
 基于alibaba的springcloud
 
-##项目说明
+## 项目说明
 1. 服务注册与发现:nacos 
 2. 服务配置中心:nacos 
 3. 熔断:sentinel
 4. 网关:gateway
 
-##springboot版本
+## springboot版本
 ~~~
 <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,7 +16,7 @@
         <relativePath/>
     </parent>
 ~~~
-##依赖管理
+## 依赖管理
 ~~~
 <dependencyManagement>
         <dependencies>
@@ -38,7 +38,7 @@
     </dependencyManagement>
 ~~~
 
-##项目结构
+## 项目结构
 
 - nacos-provider
 - nacos-consumer
